@@ -1,0 +1,29 @@
+# Python
+.venv/
+venv/
+__pycache__/
+*.pyc
+
+# Local data: readings, logs, exports and benchmark output (never commit real readings)
+data/*
+!data/.gitkeep
+*.db
+*.db-wal
+*.db-shm
+*.csv
+
+# Models: the test-case files contain copies of real readings
+models/*.cases.json
+models/*.previous.json
+
+# Secrets and local settings
+.env
+*.pem
+*.key
+
+# Other files
+.DS_Store
+.vscode/
+.idea/
+*.swp
+*.bak
